@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CBF</title>
+    <link rel="icon" type="image/svg+xml"  href="./assets/cfb_test.svg" />
+    <link href="https://fonts.cdnfonts.com/css/aonic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fjalla One', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+ <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      h1 {
+        font-family: 'Aonic', sans-serif;
+  }
+    </style>
+
+  </head>
+
+  <body
+    class="min-h-screen bg-black flex items-center justify-center text-white"
+  >
+    <div class="text-center px-6">
+      <!-- Logo -->
+      <div class="mb-8 animate-float">
+        <img
+          src="./assets/cfb_test.svg"
+          alt="Logo"
+          class="mx-auto h-auto w-44 object-contain"
+        />
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-4xl md:text-5xl opacity-60 tracking-tight mb-4">
+        Something Awesome Is Coming...
+      </h1>
+
+      <!-- Subtext -->
+      <!-- <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8">
+      We’re crafting a beautiful experience just for you.  
+      Our website is currently under construction — but it’ll be worth the wait.
+    </p> -->
+      <div class="flex items-center justify-center gap-2 mb-8">
+        <span class="w-10 h-px bg-gray-600"></span>
+        <span class="text-sm text-gray-500 uppercase tracking-widest">
+          Stay Tuned
+        </span>
+        <span class="w-10 h-px bg-gray-600"></span>
+      </div>
+      <p class="text-sm text-gray-500">
+        © 2026 Ceylon Future Beverages (Pvt) Ltd. All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>
