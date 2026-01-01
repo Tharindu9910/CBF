@@ -6,16 +6,11 @@
     <title>CBF</title>
     <link rel="icon" type="image/svg+xml"  href="./assets/cfb_test.svg" />
     <link href="https://fonts.cdnfonts.com/css/aonic" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script>
+
+<script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            display: ['Fjalla One', 'sans-serif'],
-          }
         }
       }
     }
@@ -34,6 +29,13 @@
       .animate-float {
         animation: float 3s ease-in-out infinite;
       }
+      body {
+  background-image: url("./assets/candev.png"); /* local path */
+  background-size: cover;      /* fills screen */
+  background-position: center; /* center image */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional */
+}
       h1 {
         font-family: 'Aonic', sans-serif;
   }
@@ -41,39 +43,77 @@
 
   </head>
 
+  
   <body
-    class="min-h-screen bg-black flex items-center justify-center text-white"
+  class="flex min-h-screen bg-black text-white
+         justify-center 
+         items-center 
+         px-4 sm:px-8 lg:px-20"
+>
+  <div
+    class="flex flex-col ml-[20vw] md:ml-[20vw] lg:ml-[15vw]
+           w-full max-w-[250px] md:max-w-[480px] lg:max-w-[600px]
+           text-center md:text-right
+           items-end
+           gap-4"
   >
-    <div class="text-center px-6">
-      <!-- Logo -->
-      <div class="mb-8 animate-float">
-        <img
+    <!-- Logo -->
+    <div class="flex justify-center md:justify-end mb-6 animate-float">
+      <img
+        src="./assets/cfb_test.svg"
+        alt="Logo"
+        class="w-32 sm:w-40 md:w-44 object-contain"
+      />
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-4xl md:text-5xl opacity-60 text-right tracking-tight">
+      Something Awesome Is Coming...
+    </h1>
+
+    <!-- Divider -->
+    <div class="flex items-center justify-end text-right md:justify-end gap-3">
+      <span class="w-32 sm:w-48 md:w-72 h-[2px] bg-gray-600"></span>
+      <span class="text-xs text-right sm:text-sm font-semibold text-gray-500 uppercase tracking-widest">
+        Stay Tuned
+      </span>
+    </div>
+
+    <!-- Footer -->
+    <p class="text-xs text-right sm:text-sm text-gray-500">
+      © 2026 Ceylon Future Beverages (Pvt) Ltd. All rights reserved.
+    </p>
+  </div>
+</body>
+
+</html>
+
+<!-- <body
+    class="flex flex-col min-h-screen bg-black text-right items-end justify-center text-white"
+  >
+    <div class="flex flex-col justify-end max-w-[600px] text-center px-6 mr-[18vw]">
+      
+      <div class="flex items-end justify-end mb-8 animate-float">
+        <div><img
           src="./assets/cfb_test.svg"
           alt="Logo"
           class="mx-auto h-auto w-44 object-contain"
-        />
+        /></div>
       </div>
 
-      <!-- Heading -->
-      <h1 class="text-4xl md:text-5xl opacity-60 tracking-tight mb-4">
+     
+      <h1 class="text-right text-4xl md:text-5xl opacity-60 tracking-tight mb-4">
         Something Awesome Is Coming...
       </h1>
-
-      <!-- Subtext -->
-      <!-- <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8">
-      We’re crafting a beautiful experience just for you.  
-      Our website is currently under construction — but it’ll be worth the wait.
-    </p> -->
-      <div class="flex items-center justify-center gap-2 mb-8">
-        <span class="w-10 h-px bg-gray-600"></span>
-        <span class="text-sm text-gray-500 uppercase tracking-widest">
+      <div class="flex items-center justify-end gap-2 mb-8">
+        <span class="w-[370px] h-[3px] bg-gray-600"></span>
+        <span class="text-md font-semibold pl-5 text-gray-500 uppercase tracking-widest">
           Stay Tuned
         </span>
-        <span class="w-10 h-px bg-gray-600"></span>
+       
       </div>
-      <p class="text-sm text-gray-500">
+      <p class="text-sm text-right text-gray-500">
         © 2026 Ceylon Future Beverages (Pvt) Ltd. All rights reserved.
       </p>
     </div>
-  </body>
-</html>
+  </body> -->
